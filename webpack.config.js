@@ -17,6 +17,23 @@ module.exports = {
                 'sass-loader'
             ]
         }
+        {
+            test:/\.(png|jpe?g|gif)$/i,
+            use: [
+                {
+                    loader: 'img-optimize-loader',
+                    options: {
+                        compress: {
+                            mode: 'high',
+                            webp: true,
+                            gifsicle: true,
+                            disableOnDevelopment: false
+                        }
+                    }
+
+                }
+            ]
+        }
     ]
   },
   
