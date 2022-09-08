@@ -8,6 +8,30 @@ body {
     font-family: sans-serif;
 }
 
-gallery__title {
+.gallery__title {
     color: red;
+}
+
+.gallery__items {
+    margin: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.gallery__item {
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba($color: #000000, $alpha: 0.2), 0 6px 20px 0 rgba($color: #000000, $alpha: 0.19);
+
+    &__image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    &__title {
+        padding: 20px 0;
+    }
 }
